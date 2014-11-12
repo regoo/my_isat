@@ -1,0 +1,23 @@
+/*/.DS_Store
+/AIAA-2006-6753/for/*.o
+/AIAA-2006-6753/for/Sgp4Rec.bak
+/AIAA-2006-6753/for/sgp4test.dbg
+/AIAA-2006-6753/for/testfor
+/AIAA-2006-6753/for/tfor.out
+/AIAA-2006-6753/for/tfora.out
+/Miura_Thesis_CD/SGP4 MATLAB/tmatver.out
+/AIAA-2006-6753/for/tforver.out
+/AIAA-2006-6753/mat/tmatver.out
+/AIAA-2006-6753/mat/octave-core
+/Miura_Thesis_CD/SGP4 MATLAB/octave-core
+/Miura_Thesis_CD/SGP4 MATLAB/tmat.out
+/Miura_Thesis_CD/SGP4 MATLAB/tmatall.out
+/Miura_Thesis_CD/SGP4 MATLAB/TESTS.out
+/js/octave-core
+/dox-js/
+/dox-matlab/
+isat/
+/.DS_Store
+node_modules/
+/sauce_connect.log*
+sgp4/docs/pasta.html
