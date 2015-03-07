@@ -101,9 +101,15 @@
             showGeolocation(scene);
         }
 
-        document.getElementById('select_satellite_group').value = ORIGINAL_GROUP;
         // document.getElementById('select_satellite').value = ORIGINAL_SATELLITE;
-        getSatrecsFromTLEFile(document.getElementById('select_satellite_group').value);
+        //如果获取到的ORIGINAL_GROUP以'/'结尾，则删除'/'，否则无法正确解析tle文件名。
+        if (ORIGINAL_GROUP.charAt(ORIGINAL_GROUP.length - 1) === "/") {
+            var filename = ORIGINAL_GROUP.substring(0, ORIGINAL_GROUP.length - 1);
+            getSatrecsFromTLEFile(filename);
+        }
+        else {
+            getSatrecsFromTLEFile(ORIGINAL_GROUP);
+        }
         populateSatelliteSelector();
         populateSatelliteBillboard();
         satelliteHoverDisplay(scene); // should be self-invoked
@@ -685,8 +691,7 @@
 
     if(ORIGINAL_SATELLITE == 'null') {
         window.history.replaceState(null, null, "?group="+ORIGINAL_GROUP);
-    };
-
+    }
 
     //////////////////////////////////////////
     // UI Button actions

@@ -2939,7 +2939,7 @@ var tle = {
         // https://developer.mozilla.org/en-US/docs/DOM/XMLHttpRequest/Using_XMLHttpRequest
         var request = new XMLHttpRequest();
         var ASYNC = false;      // TODO do async callback properly
-        request.open('GET', fileName, ASYNC);
+        request.open('GET', fileName);
         request.send();                 // blocks until returned due to ASYNC=false
         if (request.status !== 200) {
             return null;            // TODO throw an error
