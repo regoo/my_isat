@@ -8,18 +8,18 @@
     Interactive Satellite Tracker (iSat)
   </title>
 
-  <link rel="stylesheet" href="media/css/combined.min.css?1374773120" type="text/css" media="screen" charset="utf-8" />
-  <script src="media/js/jquery.min.js" type="text/javascript">  </script>
-  <script src="media/js/federated-analytics.js?1374773120">  </script>
-  <script type="text/javascript" src="media/sot/js/preload.js">  </script>
-  <script type="text/javascript" src="media/sot/js/isat.js">  </script>
-  <script type="text/javascript" src="media/sot/cesium/Cesium.js">  </script>
+  <link rel="stylesheet" href="css/combined.min.css?1374773120" type="text/css" media="screen" charset="utf-8" />
+  <script src="js/jquery.min.js" type="text/javascript">  </script>
+  <script src="js/federated-analytics.js?1374773120">  </script>
+  <script src="js/preload.js">  </script>
+  <script src="js/isat.js">  </script>
+  <script src="js/cesium/Cesium.js">  </script>
 
-  <link rel="stylesheet" href="media/sot/css/normalize.css">
-  <link rel="stylesheet" href="media/sot/css/main.css">
-  <script src="media/custom/custom.js" type="text/javascript" charset="utf-8">  </script>
-    <script type="text/javascript" src="media/sot/js/modernizr-2.7.1.min.js">  </script>
-    <script type="text/javascript" src="media/sot/js/modernizr_load.js">  </script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/custom.js" type="text/javascript" charset="utf-8">  </script>
+    <script type="text/javascript" src="js/modernizr-2.7.1.min.js">  </script>
+    <script type="text/javascript" src="js/modernizr_load.js">  </script>
 </head>
 <body >
   <div id="container">
@@ -28,18 +28,18 @@
         <div id="cesiumContainer">
           <div class="popup" id="satellite_popup"></div> 
           <div id="navigation_buttons" class="modal">
-            <img src="media/sot/images/Satellite_1.png"
+            <img src="images/Satellite_1.png"
                  id="satellite_button"
                  title="Select Satellites"
                  alt="Select Satellites"
                  class="hud_button"
-                 onmouseover="this.src='media/sot/images/Satellite_2.png'"
-                 onmouseout="this.src='media/sot/images/Satellite_1.png'"/>
+                 onmouseover="this.src='images/Satellite_2.png'"
+                 onmouseout="this.src='images/Satellite_1.png'"/>
           </div>
           <canvas id="glCanvas" width="300" height="300" tabindex="1"></canvas>
 
           <div id="satellite_form" class="modal">
-            <img src="media/sot/images/close.png" id="satellite_form_close" title="Close Window" alt="Close Window" class="close_button" />
+            <img src="images/close.png" id="satellite_form_close" title="Close Window" alt="Close Window" class="close_button" />
             <form id="controls">
               <fieldset>
                 <legend>Select a Satellite:</legend>
@@ -114,26 +114,26 @@
             </form>
           </div> <!-- /#satellite_form -->
           <div id="satellite_display" class="modal">
-            <img src="media/sot/images/close.png"
+            <img src="images/close.png"
                  id="satellite_display_close"
                  title="Close Window"
                  alt="Close Window"
                  class="close_button"/>
             <h2 id="satellite_name"></h2>
-            <img src="media/sot/images/Play_1.png"
+            <img src="images/Play_1.png"
                  id="play_button"
                  title="Play satellite location data"
                  alt="Play satellite location data"
                  class="play_button"
-                 onmouseover="this.src='media/sot/images/Play_2.png'"
-                 onmouseout="this.src='media/sot/images/Play_1.png'"/>
-            <img src="media/sot/images/Pause_1.png"
+                 onmouseover="this.src='images/Play_2.png'"
+                 onmouseout="this.src='images/Play_1.png'"/>
+            <img src="images/Pause_1.png"
                  id="pause_button"
                  title="Pause satellite location data"
                  alt="Pause satellite location data"
                  class="pause_button"
-                 onmouseover="this.src='media/sot/images/Pause_2.png'"
-                 onmouseout="this.src='media/sot/images/Pause_1.png'"/>
+                 onmouseover="this.src='images/Pause_2.png'"
+                 onmouseout="this.src='images/Pause_1.png'"/>
             <dl>
               <dt>Satellite ID</dt>
               <dd id="satellite_id"></dd>
@@ -161,6 +161,6 @@
       </div> <!-- /#wrapper -->
     </div>
   </div>
-  <script src="media/js/base.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/base.min.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

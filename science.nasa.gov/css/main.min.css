@@ -1,23 +1,13 @@
-/*
- * SOT Main CSS
- *
- * Copyright:
- *
- * Licensed:
- *
- * Revision:
- */
-
 body {
-    font-family: Sans-Serif;
+    font-family: Sans-Serif
 }
 
 #wrapper {
-    padding: 0 15px 1px 15px;
+    padding: 0 15px 1px 15px
 }
 
 #backgroundShadow {
-    background: url(../../img/content_bg.png) repeat-y;
+    background: url(../images/content_bg.png) repeat-y
 }
 
 #iSat_header {
@@ -29,12 +19,12 @@ body {
     height: 80px;
     border-bottom: 2px solid #4cf126;
     min-width: 800px;
-    max-width: 100%;
+    max-width: 100%
 }
 
 #controls dd {
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 5px
 }
 
 #controls select {
@@ -49,157 +39,156 @@ body {
     line-height: 20px;
     margin-bottom: 10px;
     padding: 4px 6px;
-    vertical-align: middle;
+    vertical-align: middle
 }
 
 #instructions p {
-    margin: 5px;
+    margin: 5px
 }
 
 h1 {
     font-size: 1.75em;
-    font-weight:bold;
+    font-weight: bold;
     padding-left: 5px;
-    /* google Iceland would be nice web font */
     font-family: impact, arial, trebuchet, verdana, sans-serif;
     font-style: oblique;
     background-color: black;
-    color: rgb(94, 237, 0);
+    color: #5eed00
 }
+
 h2 {
     font-size: 1.5em;
-    font-weight:bold;
-    padding-left: 5px;
+    font-weight: bold;
+    padding-left: 5px
 }
+
 h3 {
     font-size: 1.25em;
-    font-weight:bold;
+    font-weight: bold;
     padding-left: 5px;
-    margin: 0.25em 0;
+    margin: 0.25em 0
 }
 
 legend {
     font-size: 1.5em;
-    font-weight:bold;
+    font-weight: bold;
     padding-left: 5px;
-    margin: 0.83em 0;
+    margin: 0.83em 0
 }
 
 #cesiumContainer {
-    position: relative;
+    position: relative
 }
 
 #reset_button {
     width: 50px;
     height: 50px;
-    display: inline-block;
+    display: inline-block
 }
 
 #instructions_button {
     width: 50px;
     height: 50px;
-    display: inline-block;
+    display: inline-block
 }
 
 #display_button {
     width: 50px;
     height: 50px;
-    display: inline-block;
+    display: inline-block
 }
 
 #satellite_button {
     width: 50px;
     height: 50px;
-    display: inline-block;
+    display: inline-block
 }
 
 #fullscreen_button {
     width: 50px;
     height: 50px;
-    display: inline-block;
+    display: inline-block
 }
 
 #play_button {
     width: 59px;
     height: 38px;
     display: inline-block;
-    margin: 5px;
+    margin: 5px
 }
 
 #pause_button {
     width: 59px;
     height: 38px;
     display: inline-block;
-    margin: 5px;
+    margin: 5px
 }
 
 #instructions {
     display: none;
     top: 150px;
     left: 5px;
-    width: 400px;
+    width: 400px
 }
 
 #satellite_form {
     display: none;
     top: 150px;
-    left: 5px;
+    left: 5px
 }
 
 #satellite_form fieldset {
-    border: none;
+    border: none
 }
 
 #map_display {
     display: none;
     top: 150px;
-    left: 5px;
+    left: 5px
 }
 
 #satellite_display {
     display: none;
     top: 10px;
     right: 10px;
-    width: 300px;
+    width: 300px
 }
-
-
 
 #satellite_display dl {
     padding: 0.5em;
-    margin: 0px;
+    margin: 0px
 }
 
 #satellite_display dt {
     float: left;
     clear: left;
     width: 150px;
-    color: white;
+    color: white
 }
 
 #satellite_display dt:after {
-    content: ":";
+    content: ":"
 }
 
 #satellite_display dd {
     margin: 0 0 0 110px;
-    padding: 0 0 0.5em 0;
+    padding: 0 0 0.5em 0
 }
 
 #satellite_display a:link {
     color: #42d025;
-    text-decoration:none;
-    padding-left: 5px;
+    text-decoration: none;
+    padding-left: 5px
 }
 
 #satellite_display a:visited {
     color: #42d025;
-    text-decoration:none;
+    text-decoration: none
 }
 
 #satellite_display a:hover {
     color: #42d025;
-    text-decoration:underline;
+    text-decoration: underline
 }
 
 #user_date {
@@ -210,17 +199,16 @@ legend {
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
-    opacity: 0.85;
+    opacity: 0.85
 }
 
-/* Buttons */
 #navigation_buttons {
     position: absolute;
     top: 70px;
     left: 5px;
     z-index: 10;
     width: 300px;
-    text-align: center;
+    text-align: center
 }
 
 #zoom_buttons {
@@ -229,58 +217,59 @@ legend {
     left: 5px;
     z-index: 10;
     width: 300px;
-    text-align: center;
+    text-align: center
 }
 
 #zoom_out {
-    width: 150px;
+    width: 150px
 }
 
 #zoom_in {
     margin-left: -5px;
-    width: 150px;
+    width: 150px
 }
 
 #cesiumLogo {
     position: absolute;
     bottom: 5px;
-    right: 5px;
+    right: 5px
 }
 
 #isat_text_only {
     padding-left: 15px;
-    background: url(../../img/content_bg.png) repeat-y;
+    background: url(../images/content_bg.png) repeat-y
 }
 
 #controls fieldset {
     margin: 0px;
-    padding: 0px;
+    padding: 0px
 }
 
 #controls dl {
-    margin: 0px;
+    margin: 0px
 }
 
 #controls dt {
-    padding-left: 5px;
+    padding-left: 5px
 }
 
 #controls dd {
-    margin: 0 0 0 5px;
+    margin: 0 0 0 5px
 }
+
 .close_button {
-    float: right;
+    float: right
 }
 
 .hud_button {
     height: 70px;
     width: 70px;
     display: inline-block;
-    margin: 2.5px;
+    margin: 2.5px
 }
 
 .second_level {
-    padding-left: 15px;
+    padding-left: 15px
 }
 
 .modal {
@@ -292,14 +281,14 @@ legend {
     -moz-border-radius: 15px;
     border-radius: 15px;
     opacity: 0.85;
-    z-index: 10;
+    z-index: 10
 }
 
 .perspective_button {
     padding-top: 5px;
-    padding-right: 10px;
+    padding-right: 10px
 }
 
 .float-right {
-    float: right;
+    float: right
 }

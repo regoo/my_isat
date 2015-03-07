@@ -5,7 +5,7 @@ body {
   padding: 0 15px 1px 15px; }
 
 #backgroundShadow {
-  background: url(../../img/content_bg.png) repeat-y; }
+  background: url(../images/content_bg.png) repeat-y; }
 
 #controls dd {
   padding-top: 5px;
