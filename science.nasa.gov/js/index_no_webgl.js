@@ -205,7 +205,7 @@ jQuery(document).ready(function ($) {
                     position: new google.maps.LatLng(satrecs[satnum].latInDegrees, satrecs[satnum].lonInDegrees),
                     map: gmap,
                     title: satnames[satnum],
-                    icon: 'media/sot/images/Satellite.png'
+                    icon: 'images/Satellite.png'
                 });
                 GLOBAL_MARKERS[satnum] = marker;
                 addListeners(satnum);
@@ -275,9 +275,9 @@ jQuery(document).ready(function ($) {
         }
     }
 
-    getSatrecsFromTLEFile('media/sot/tle/SMD.txt');
+    getSatrecsFromTLEFile('tle/SMD.txt');
     document.getElementById('select_satellite_group').onchange = function () {
-        getSatrecsFromTLEFile('media/sot/tle/' + this.value + '.txt'); // TODO: security risk?
+        getSatrecsFromTLEFile('sot/tle/' + this.value + '.txt'); // TODO: security risk?
         clearMap();
         GLOBAL_MARKERS = [];
     };
