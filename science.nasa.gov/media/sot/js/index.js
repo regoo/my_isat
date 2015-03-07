@@ -91,7 +91,7 @@
         checkURLVariables();
 
         // How do we tell if we can't get Bing, and substitute flat map with 'single'?
-        cb.imageryLayers.addImageryProvider(TILE_PROVIDERS.bing); // TODO: get from HTML selector
+        cb.imageryLayers.addImageryProvider(TILE_PROVIDERS.static); // TODO: get from HTML selector
 
         scene.primitives.centralBody = cb;
         scene.skyAtmosphere = new Cesium.SkyAtmosphere(); // make globe stand out from skybox
